@@ -20,8 +20,10 @@ RUN  apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/log/*.log \
-  && mkdir -p /var/run/sshd \
-  && rm -f /etc/ssh/ssh_host_*key*
+  && mkdir -p /var/run/sshd
+  
+  # Removed this line to keep host-keys - Morten Knudsen
+  # && rm -f /etc/ssh/ssh_host_*key*
 
 COPY files/sshd_config /etc/ssh/sshd_config
 COPY files/create-sftp-user /usr/local/bin/
