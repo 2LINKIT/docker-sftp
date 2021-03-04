@@ -20,7 +20,8 @@ RUN  apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/log/*.log \
-  && mkdir -p /var/run/sshd
+  && mkdir -p /var/run/sshd \
+  && rm -f /etc/ssh/ssh_host_*key*
   
   # Removed this line to keep host-keys - Morten Knudsen
   # && rm -f /etc/ssh/ssh_host_*key*
