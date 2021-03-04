@@ -17,11 +17,15 @@ AllowTcpForwarding no
 
 # Force sftp and chroot jail
 Subsystem sftp internal-sftp -f AUTH -l VERBOSE
+
+# Changed by Morten Knudsen, 2LINKIT
+ChrootDirectory /sftp
+
 # umask for user|group rwx|rwx permisions 
 ForceCommand internal-sftp -u 0002 -f AUTH -l VERBOSE
 
-ChrootDirectory /home/%u
-
+# OLD TEXT
+# ChrootDirectory /home/%u
 # Match Group users
 # ChrootDirectory %h
 
