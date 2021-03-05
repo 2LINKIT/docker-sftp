@@ -15,6 +15,13 @@ PermitRootLogin no
 X11Forwarding no
 AllowTcpForwarding no
 
+#-----------------------------------------------------------------------
+# Added by Morten Knudsen
+mkdir -p /sftp/
+
+chown root:root /sftp
+chmod -R 755 /sftp/
+
 # Changed by Morten Knudsen, 2LINKIT
 Subsystem sftp internal-sftp -f AUTH -l VERBOSE
 ForceCommand internal-sftp -f AUTH -l VERBOSE
