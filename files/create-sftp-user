@@ -229,5 +229,5 @@ chmod -R 755 /sftp/
 #-----------------------------------------------------------------------
 mkdir -p /sftp/dev
 
-chown root:root /sftp/logs
-chmod -R 755 /sftp/logs
+chown root:root /sftp/dev
+chmod -R 755 /sftp/dev
