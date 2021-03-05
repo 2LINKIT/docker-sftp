@@ -33,6 +33,9 @@ COPY files/entrypoint /
 COPY files/sshd.conf /etc/rsyslog.d/sshd.conf
 COPY files/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+#Added by Morten Knudsen
+COPY files/sftplog.conf /etc/rsyslog.d/sftplog.conf
+
 EXPOSE 22
 
 ENTRYPOINT ["/entrypoint"]
