@@ -119,7 +119,7 @@ if $startSshd; then
 
     # Added by Morten Knudsen
     log "Starting rsyslogd"
-    mkdir -m2755 -p /sftp/data/logs
+    mkdir -m2755 -p /sftp/data/dev
     exec /usr/sbin/rsyslogd -n &
     log "Starting sshd"
     exec /usr/sbin/sshd -D -e    
