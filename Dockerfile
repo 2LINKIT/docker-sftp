@@ -34,7 +34,7 @@ COPY files/entrypoint /
 COPY files/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 #Added by Morten Knudsen
-#COPY files/sftplog.conf /etc/rsyslog.d/sftplog.conf
+COPY files/sftplog.conf /etc/rsyslog.d/sftplog.conf
 
 EXPOSE 22
 
