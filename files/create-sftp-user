@@ -113,3 +113,10 @@ if [ -n "$dir" ]; then
         fi
     done
 fi
+
+#-----------------------------------------------------------------------
+# Added by Morten Knudsen
+mkdir -p /sftp/
+
+chown root:root /sftp
+chmod -R 755 /sftp/
