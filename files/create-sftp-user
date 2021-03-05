@@ -227,7 +227,6 @@ mkdir -p /sftp/
 chown root:root /sftp
 chmod -R 755 /sftp/
 #-----------------------------------------------------------------------
-mkdir -p /sftp/dev
-
-chown root:root /sftp/dev
-chmod -R 755 /sftp/dev
+#mkdir -p /sftp/dev
+#chown root:root /sftp/dev
+#chmod -R 755 /sftp/dev
