@@ -30,7 +30,7 @@ COPY files/sshd_config /etc/ssh/sshd_config
 COPY files/create-sftp-user /usr/local/bin/
 COPY files/jail.local /etc/fail2ban/
 COPY files/entrypoint /
-COPY files/sshd.conf /etc/rsyslog.d/sshd.conf
+#COPY files/sshd.conf /etc/rsyslog.d/sshd.conf
 COPY files/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 #Added by Morten Knudsen
