@@ -18,8 +18,9 @@ AllowTcpForwarding no
 # Changed by Morten Knudsen, 2LINKIT
 Subsystem sftp internal-sftp -f AUTH -l VERBOSE
 ForceCommand internal-sftp -f AUTH -l VERBOSE
-Match group 777
-  ChrootDirectory /sftp
+#Match group 777
+#  ChrootDirectory /sftp
+ChrootDirectory /
 
 # Enable this for more logs
 LogLevel VERBOSE
